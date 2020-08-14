@@ -1,0 +1,19 @@
+@mixin flexCenter{
+    height:100vh;
+    display: flex;
+    align-items:center;
+}
+@import './variables';
+
+.btn2{
+    @include flexCenter();
+    background:$secondBtn;
+    &:hover{
+        background:black;
+        color:white;
+        &::after{
+            content: 'go away';
+        }
+    }
+}
+

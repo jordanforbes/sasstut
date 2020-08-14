@@ -1,0 +1,39 @@
+.btn2, .btn3 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: Green;
+}
+.btn2:hover, .btn3:hover {
+  background: black;
+  color: white;
+}
+.btn2:hover::after, .btn3:hover::after {
+  content: "go away";
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: lightblue;
+  justify-content: center;
+  color: black;
+}
+header .btn1 {
+  background: red;
+  color: black;
+}
+header .btn1:hover {
+  background: yellow;
+}
+header .btn1::after {
+  content: "no";
+}
+
+.btn3 {
+  background: lightcoral;
+  width: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

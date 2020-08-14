@@ -1,0 +1,29 @@
+@import './btn2';
+@import './variables';
+
+@mixin newButton($mainColor, $hover){
+    background: $mainColor;
+    color:$textColor;
+    &:hover{
+        background:$hover;
+    }
+    &::after{
+        content:'no';
+    }
+}
+
+header{
+    @include flexCenter();
+    background: lightblue;
+    justify-content: center;
+    color:$textColor;
+    .btn1{
+        @include newButton($primaryBtn, $hoverColor);
+    }
+}
+
+.btn3{
+    @extend .btn2;
+    background: lightcoral;
+    width: 100% - 90%;
+}
